@@ -1,24 +1,24 @@
 # Healthify Backend Engine ⚡
 
-[cite_start]A secure, high-performance, and localized REST API engineered using FastAPI and PostgreSQL[cite: 48, 103]. [cite_start]Built as a robust digital healthcare backend, this system is architected to eliminate administrative gaps and streamline doctor-patient workflows through rigorous relational data tracking, cryptographic security, and state-driven transaction workflows[cite: 44, 46, 49].
+A secure, high-performance, and localized REST API engineered using FastAPI and PostgreSQL. Built as a robust digital healthcare backend, this system is architected to eliminate administrative gaps and streamline doctor-patient workflows through rigorous relational data tracking, cryptographic security, and state-driven transaction workflows.
 
 ---
 
 ## 🛠️ Core Engineering Highlights
 
-* [cite_start]**Relational Database Integrity:** Engineered a strict 4-table relational database schema mapping relationships seamlessly across Users, Doctor Profiles, Appointments, and Clinical Medical Records via SQLAlchemy ORM[cite: 74, 82, 85, 87].
-* [cite_start]**Enterprise-Grade Security:** Enforced robust data privacy protocols utilizing cryptographic password hashing with **Passlib (Bcrypt)** and stateless session management powered by **JSON Web Tokens (JWT)**[cite: 97].
-* [cite_start]**State-Driven Transactions:** Built explicit state tracking for appointment scheduling workflows, integrating an operational payment verification sequence (`is_paid` boolean state) that must validate successfully before a slot changes from pending to confirmed[cite: 54, 79, 88].
-* [cite_start]**Decoupled Clinical Workflows:** Designed isolated medical report management mechanics, allowing practitioners to securely commit text diagnostics bound permanently to a persistent patient record[cite: 53, 82, 91].
+* **Relational Database Integrity:** Engineered a strict 4-table relational database schema mapping relationships seamlessly across Users, Doctor Profiles, Appointments, and Clinical Medical Records via SQLAlchemy ORM.
+* **Enterprise-Grade Security:** Enforced robust data privacy protocols utilizing cryptographic password hashing with **Passlib (Bcrypt)** and stateless session management powered by **JSON Web Tokens (JWT)**.
+* **State-Driven Transactions:** Built explicit state tracking for appointment scheduling workflows, integrating an operational payment verification sequence (`is_paid` boolean state) that must validate successfully before a slot changes from pending to confirmed.
+* **Decoupled Clinical Workflows:** Designed isolated medical report management mechanics, allowing practitioners to securely commit text diagnostics bound permanently to a persistent patient record.
 
 ---
 
 ## 💻 Tech Stack & Rationale
 
-* [cite_start]**Framework:** **FastAPI** (Python) – Selected for asynchronous high performance, rapid development speeds, and native OpenAPI (Swagger) automated documentation generation[cite: 103].
-* [cite_start]**Database:** **PostgreSQL** – Chosen to guarantee strict data integrity, complex transactional handling, and enterprise-scale indexing[cite: 103].
+* **Framework:** **FastAPI** (Python) – Selected for asynchronous high performance, rapid development speeds, and native OpenAPI (Swagger) automated documentation generation.
+* **Database:** **PostgreSQL** – Chosen to guarantee strict data integrity, complex transactional handling, and enterprise-scale indexing.
 * **ORM:** **SQLAlchemy** – Utilized to translate application-layer logic cleanly into highly optimized SQL queries.
-* [cite_start]**Security Layer:** **JWT (Python-Jose)** & **Bcrypt (Passlib)** – Integrated to satisfy strict platform authentication and security mandates[cite: 97].
+* **Security Layer:** **JWT (Python-Jose)** & **Bcrypt (Passlib)** – Integrated to satisfy strict platform authentication and security mandates.
 
 ---
 
