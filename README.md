@@ -85,4 +85,3 @@ Once initialized, navigate to **`http://127.0.0.1:8000/docs`** in your web brows
 
 * **Email:** [abdulrehman.tp.786@gmail.com]()
 * **LinkedIn:** [Abdul Rehman Ali](https://www.linkedin.com/in/abdul-rehman-ali/)
-
